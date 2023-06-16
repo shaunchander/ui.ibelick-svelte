@@ -1,7 +1,0 @@
-{
-  "name": "ui.ibelick-svelte",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "custom"
-}
