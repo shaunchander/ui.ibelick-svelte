@@ -25,7 +25,13 @@
 		description:
 			'A unique collection of modern UI components and effects built with Svelte and TailwindCSS.',
 		siteName: 'ui.ibelick-svelte',
-		url: 'https://ui-ibelick-svelte.vercel.app'
+		url: 'https://ui-ibelick-svelte.vercel.app',
+		images: [
+			{
+				url: 'https://ui-ibelick-svelte.vercel.app/og.png',
+				alt: 'Thumbnail'
+			}
+		]
 	}}
 />
 
