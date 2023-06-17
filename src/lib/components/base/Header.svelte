@@ -16,7 +16,7 @@
 			<TwitterLogo class="h-6 w-6 text-slate-400 transition-colors hover:text-white" />
 		</a>
 		<a
-			href="https://github.com/shauncahnder/ui.ibelick-svelte"
+			href="https://github.com/shaunchander/ui.ibelick-svelte"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="inline-flex"
