@@ -7,15 +7,15 @@ import ButtonHoverGradient from '$lib/components/ButtonHoverGradient.svelte';
 import ButtonBackgroundSpotlight from '$lib/components/ButtonBackgroundSpotlight.svelte';
 import ButtonRotatingBackgroundGradient from '$lib/components/ButtonRotatingBackgroundGradient.svelte';
 import ButtonShadowGradient from '$lib/components/ButtonShadowGradient.svelte';
-import InputGradientBorder from './components/InputGradientBorder.svelte';
-import InputSpotlightBorder from './components/InputSpotlightBorder.svelte';
-import InputPulseBorder from './components/InputPulseBorder.svelte';
-import BadgeAnimatedGradientBorder from './components/BadgeAnimatedGradientBorder.svelte';
-import BadgeShine from './components/BadgeShine.svelte';
-import BadgeTextGradient from './components/BadgeTextGradient.svelte';
-import CardAnimatedBorderGradient from './components/CardAnimatedBorderGradient.svelte';
-import CardSpotlight from './components/CardSpotlight.svelte';
-import CardPulseBorder from './components/CardPulseBorder.svelte';
+import InputGradientBorder from '$lib/components/InputGradientBorder.svelte';
+import InputSpotlightBorder from '$lib/components/InputSpotlightBorder.svelte';
+import InputPulseBorder from '$lib/components/InputPulseBorder.svelte';
+import BadgeAnimatedGradientBorder from '$lib/components/BadgeAnimatedGradientBorder.svelte';
+import BadgeShine from '$lib/components/BadgeShine.svelte';
+import BadgeTextGradient from '$lib/components/BadgeTextGradient.svelte';
+import CardAnimatedBorderGradient from '$lib/components/CardAnimatedBorderGradient.svelte';
+import CardSpotlight from '$lib/components/CardSpotlight.svelte';
+import CardPulseBorder from '$lib/components/CardPulseBorder.svelte';
 
 const twConfig = {
 	['text-gradient']: {

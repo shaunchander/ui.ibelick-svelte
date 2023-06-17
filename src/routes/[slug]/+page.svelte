@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { components } from '$lib/data.js';
+	import { components } from '$lib/data';
 	import CodeBlock from '$lib/components/base/CodeBlock.svelte';
 	export let data;
 
@@ -19,7 +19,7 @@
 			<svelte:component this={currentComponent[0].component} />
 		</ComponentPlayground>
 		<div class="mt-8">
-			<CodeBlock code={data.code} lang="html" />
+			<CodeBlock code={data.code} />
 		</div>
 		{#if data.twCode}
 			<div class="mt-8">
