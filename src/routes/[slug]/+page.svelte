@@ -13,7 +13,7 @@
 
 <Somerset
 	title={`${data.name} | ui.ibelick-svelte`}
-	canonical={`ui-ibelick-svelte.vercel.app/${data.slug}`}
+	canonical={`https://ui-ibelick-svelte.vercel.app/${data.slug}`}
 />
 
 <div class="mt-10 pb-32">
