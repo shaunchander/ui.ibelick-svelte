@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import '../app.postcss';
 	import '../prism.css';
 
@@ -8,6 +9,14 @@
 </script>
 
 <svelte:head>
+	{#if !dev}
+		<script
+			async
+			src="https://umami.services.shaunchander.me/script.js"
+			data-website-id="8465fa7d-d784-45f2-98c6-5b1b38c8b0a4"
+		></script>
+	{/if}
+
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
@@ -32,6 +41,9 @@
 				alt: 'Thumbnail'
 			}
 		]
+	}}
+	twitter={{
+		cardType: 'summary_large_image'
 	}}
 />
 
