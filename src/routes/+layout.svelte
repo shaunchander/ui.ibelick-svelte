@@ -4,6 +4,7 @@
 
 	import Header from '$lib/components/base/Header.svelte';
 	import Footer from '$lib/components/base/Footer.svelte';
+	import { Somerset } from 'somerset';
 </script>
 
 <svelte:head>
@@ -14,6 +15,19 @@
 		rel="stylesheet"
 	/>
 </svelte:head>
+
+<Somerset
+	title="ui.ibelick-svelte"
+	description="A unique collection of modern UI components and effects built with Svelte and TailwindCSS."
+	canonical="https://ui-ibelick-svelte.vercel.app"
+	openGraph={{
+		title: 'ui.ibelick-svelte',
+		description:
+			'A unique collection of modern UI components and effects built with Svelte and TailwindCSS.',
+		siteName: 'ui.ibelick-svelte',
+		url: 'https://ui-ibelick-svelte.vercel.app'
+	}}
+/>
 
 <div class="bg-black">
 	<div class="mx-auto flex min-h-screen max-w-5xl flex-col px-4">

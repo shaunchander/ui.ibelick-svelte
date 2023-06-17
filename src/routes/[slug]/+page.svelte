@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { components } from '$lib/data';
 	import CodeBlock from '$lib/components/base/CodeBlock.svelte';
+	import { Somerset } from 'somerset';
 	export let data;
 
 	let currentComponent = components.filter((component) => component.slug === data.slug);
@@ -9,6 +10,11 @@
 
 	import ComponentPlayground from '$lib/components/base/ComponentPlayground.svelte';
 </script>
+
+<Somerset
+	title={`${data.name} | ui.ibelick-svelte`}
+	canonical={`ui-ibelick-svelte.vercel.app/${data.slug}`}
+/>
 
 <div class="mt-10 pb-32">
 	<div class="container mx-auto text-white">
