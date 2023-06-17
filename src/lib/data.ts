@@ -96,7 +96,7 @@ export const components = [
 	{
 		name: 'Button Background Shine',
 		component: ButtonBackgroundSpotlight,
-		slug: 'button-background-shine'
+		slug: 'button-background-spotlight'
 	},
 	{
 		name: 'Button Rotating Background Gradient',
