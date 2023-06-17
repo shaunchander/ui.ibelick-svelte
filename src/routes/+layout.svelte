@@ -1,7 +1,9 @@
 <script lang="ts">
 	import '../app.postcss';
+	import '../prism.css';
 
 	import Header from '$lib/components/base/Header.svelte';
+	import Footer from '$lib/components/base/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -17,31 +19,6 @@
 	<div class="mx-auto flex min-h-screen max-w-5xl flex-col px-4">
 		<Header />
 		<main class="flex-1"><slot /></main>
-		<footer>
-			<div class="flex-col flex space-y-2 items-center justify-center py-8">
-				<span class="text-sm text-gray-400">
-					Ported to Svelte by
-					<a
-						href="https://twitter.com/shaunchander"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="ml-1 text-white"
-					>
-						@shaunchander
-					</a>
-				</span>
-				<span class="text-sm text-gray-400">
-					Original components for react made by
-					<a
-						href="https://twitter.com/Ibelick"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="ml-1 text-white"
-					>
-						@Ibelick
-					</a>
-				</span>
-			</div>
-		</footer>
+		<Footer />
 	</div>
 </div>

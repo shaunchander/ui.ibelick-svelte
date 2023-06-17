@@ -21,7 +21,7 @@
 				<span class="text-white">Svelte and Tailwind CSS</span>.
 			</p>
 			<em class="text-sm block text-slate-600 mt-6 font-medium">
-				This is an unofficial port of <a
+				This is an unofficial Svelte port of <a
 					target="_blank"
 					class="underline"
 					href="https://ui.ibelick.com/">ui.ibelick's component library for React</a

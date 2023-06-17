@@ -1,22 +1,30 @@
-<div className='mt-10 pb-32'>
-      <h1 className='text-md mb-2 font-light text-gray-400'>
-        {currentComponentData.name}
-      </h1>
-      <div className='container text-white'>
-        <ComponentPlayground isCentered>
-          <currentComponentData.component />
-        </ComponentPlayground>
-        <div className='mt-8'>
-          <CodeBlock code={code} lang='tsx' />
-        </div>
-        {Boolean(twConfig) ? (
-          <div className='mt-8'>
-            <CodeBlock
-              code={twConfig}
-              lang='tsx'
-              fileName='tailwind.config.js'
-            />
-          </div>
-        ) : null}
-      </div>
-    </div>
+<script lang="ts">
+	import { components } from '$lib/data.js';
+	import CodeBlock from '$lib/components/base/CodeBlock.svelte';
+	export let data;
+
+	let currentComponent = components.filter((component) => component.slug === data.slug);
+
+	const twConfig = JSON.stringify(currentComponent[0].twConfig, null, 2);
+
+	import ComponentPlayground from '$lib/components/base/ComponentPlayground.svelte';
+</script>
+
+<div class="mt-10 pb-32">
+	<div class="container mx-auto text-white">
+		<h1 class="text-md mb-2 font-light text-gray-400">
+			{data.name}
+		</h1>
+		<ComponentPlayground>
+			<svelte:component this={currentComponent[0].component} />
+		</ComponentPlayground>
+		<div class="mt-8">
+			<CodeBlock code={data.code} lang="html" />
+		</div>
+		{#if data.twCode}
+			<div class="mt-8">
+				<CodeBlock code={data.twCode} fileName="tailwind.config.js" />
+			</div>
+		{/if}
+	</div>
+</div>
