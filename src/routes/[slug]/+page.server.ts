@@ -35,8 +35,10 @@ export async function load({ params }) {
 
 	return {
 		name: componentName,
-		code: htmlCode,
-		twCode,
+		formattedCode: htmlCode,
+		formattedTwConfig: twCode,
+		code: fileContent,
+		twConfig,
 		slug
 	};
 }

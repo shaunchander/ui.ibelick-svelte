@@ -25,11 +25,15 @@
 			<svelte:component this={currentComponent[0].component} />
 		</ComponentPlayground>
 		<div class="mt-8">
-			<CodeBlock code={data.code} />
+			<CodeBlock code={data.formattedCode} copy={data.code} />
 		</div>
-		{#if data.twCode}
+		{#if data.formattedTwConfig}
 			<div class="mt-8">
-				<CodeBlock code={data.twCode} fileName="tailwind.config.js" />
+				<CodeBlock
+					code={data.formattedTwConfig}
+					copy={data.twConfig}
+					fileName="tailwind.config.js"
+				/>
 			</div>
 		{/if}
 	</div>
